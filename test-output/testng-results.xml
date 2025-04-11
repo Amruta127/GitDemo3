@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-08T15:16:21 IST" name="Suite" finished-at="2025-01-08T15:16:44 IST" duration-ms="23262">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4009e306]" name="SubmitOrder" class="rahulshettyacademy.tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2025-01-08T15:16:21 IST" name="Base Test" finished-at="2025-01-08T15:16:21 IST" duration-ms="34">
+    </test> <!-- Base Test -->
+    <test started-at="2025-01-08T15:16:21 IST" name="Error validation Tests" finished-at="2025-01-08T15:16:21 IST" duration-ms="34">
+    </test> <!-- Error validation Tests -->
+    <test started-at="2025-01-08T15:16:21 IST" name="Submit Order Test" finished-at="2025-01-08T15:16:44 IST" duration-ms="23262">
+      <class name="rahulshettyacademy.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4009e306]" started-at="2025-01-08T15:16:21 IST" name="launchApplication" finished-at="2025-01-08T15:16:32 IST" duration-ms="10710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4009e306]" started-at="2025-01-08T15:16:32 IST" name="SubmitOrder" data-provider="getData" finished-at="2025-01-08T15:16:37 IST" duration-ms="5375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Anjali@127, product=ADIDAS ORIGINAL, email=anjalisharma127@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4009e306]" started-at="2025-01-08T15:16:37 IST" name="tearDown" finished-at="2025-01-08T15:16:37 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4009e306]" started-at="2025-01-08T15:16:37 IST" name="launchApplication" finished-at="2025-01-08T15:16:43 IST" duration-ms="5324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4009e306]" started-at="2025-01-08T15:16:43 IST" name="SubmitOrder" data-provider="getData" finished-at="2025-01-08T15:16:44 IST" duration-ms="1043" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Iamking@000, product=ZARA COAT 3, email=shetty@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at rahulshettyacademy.pageobject.ProductCatologue.addProductToCart(ProductCatologue.java:52)
+at rahulshettyacademy.tests.SubmitOrderTest.SubmitOrder(SubmitOrderTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4009e306]" started-at="2025-01-08T15:16:44 IST" name="tearDown" finished-at="2025-01-08T15:16:44 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- rahulshettyacademy.tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
